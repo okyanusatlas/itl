@@ -17,7 +17,6 @@ export class VehicleComponent implements OnInit {
     try {
       const vehicles = await this.vehicleService.fetchVehicles();
       this.vehicles = this.vehicleService.transformToGetImageEasier(vehicles);
-      console.log(this.vehicles);
     }
 
     catch (e) {

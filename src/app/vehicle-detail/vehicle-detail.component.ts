@@ -24,6 +24,5 @@ export class VehicleDetailComponent implements OnInit {
       }
 
     }
-    console.log(this.vehicle);
   }
 }
