@@ -1,0 +1,16 @@
+<div *ngIf="errorMsg">
+  <handle-error [errorMsg]="errorMsg"></handle-error>
+</div>
+
+<div *ngIf="vehicle.id">
+  <div class="card-body">
+    <h4 class="card-title ">
+      <hr/>
+      <p class="text-center">{{vehicle.id.toUpperCase()}} </p>
+      <hr/>
+    </h4>
+    <h5> From {{vehicle.price}}</h5>
+    <p class="card-text">{{vehicle.description}}</p>
+  </div>
+</div>
+
